@@ -1,0 +1,21 @@
+.pagination {
+  display: inline-block;
+  button {
+    height: 32px;
+    width: 32px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .clicked {
+    background: #56d9d9;
+    border: 1px solid #f6f6f6;
+    box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+  }
+
+  button:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+}

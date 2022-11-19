@@ -1,0 +1,122 @@
+.card-wrapper {
+  position: relative;
+  width: 282px;
+  height: 580px;
+  background: #ffffff;
+  border: 0.5px solid #424242;
+  border-radius: 8px;
+  margin: 0 24px 20px;
+  .header {
+    width: 100%;
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: 250px;
+    }
+    .discount {
+      position: absolute;
+      width: 71px;
+      height: 23px;
+      background: #56d9d9;
+      border-radius: 4px;
+      margin-inline-start: 10px;
+      margin-top: 10px;
+      p {
+        margin: 0;
+        padding: 3px 0 0 10px;
+      }
+    }
+  }
+
+  .content {
+    margin: 15px;
+    .tilte {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      color: #344054;
+      margin: 15px 0 8px 0;
+      width: 264px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 8px 0 14px 0;
+    }
+    .description {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      color: #344054;
+      width: 264px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 8px 0 14px 0;
+    }
+    .price {
+      display: flex;
+      margin-bottom: 28px;
+      .discount {
+        position: relative;
+        width: fit-content;
+        margin: 0px;
+        p {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          color: #344054;
+        }
+      }
+      .discount::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: #344054;
+        position: absolute;
+        bottom: 8px;
+        left: 0;
+      }
+      .price-value {
+        margin: 0 16px 0 16px;
+        p {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          color: #344054;
+        }
+      }
+    }
+    .info {
+      p {
+        margin: 0 0 8px 0;
+      }
+    }
+    .rate {
+      display: flex;
+      justify-content: end;
+      fill: #f4b000;
+      margin: 15px 0;
+      p {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        text-align: center;
+        color: #f4b000;
+        margin: 3px;
+      }
+    }
+    .btn {
+      height: 50px;
+      width: 250px;
+      background: #56d9d9;
+      border-radius: 4px;
+      color: #344054;
+      margin-top: 16px;
+    }
+  }
+}

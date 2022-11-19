@@ -1,0 +1,23 @@
+.listings-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+  width: 100%;
+  height: 100%;
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+    .products-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .products {
+      }
+    }
+    .pagination {
+      align-self: center;
+    }
+  }
+}

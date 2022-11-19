@@ -1,0 +1,42 @@
+<div class="card-wrapper">
+  <div class="header">
+    <div class="discount">
+      <p>{{ "-" + product.discountPercentage + "%" }}</p>
+    </div>
+    <img [src]="product.images[0]" />
+  </div>
+  <div class="content">
+    <p class="tilte">{{ product.title }}</p>
+    <p class="description">{{ product.description }}</p>
+
+    <div class="price">
+      <p class="discount">
+        {{ product.price }}
+        USD
+      </p>
+      <p class="price-value">
+        {{
+          product.price - (product.price * product.discountPercentage) / 100
+            | number: "1.0-0"
+        }}
+        USD
+      </p>
+    </div>
+    <div class="info">
+      <p>Brand:{{ product.brand }}</p>
+      <p>Category:{{ product.category }}</p>
+      <p>In stock:{{ product.stock }}</p>
+    </div>
+
+    <div class="rate">
+      <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20">
+        <path
+          d="m5.062 18 1.313-5.542L2 8.729l5.75-.5L10 3l2.25 5.25 5.75.479-4.375 3.729L14.938 18 10 15.062Z"
+        />
+      </svg>
+      <p>{{ product.rating }}</p>
+    </div>
+
+    <button class="btn">ADD TO CART</button>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="login-wrapper">
+  <div class="titles">
+    <app-logo></app-logo>
+    <h1>Log in to your account</h1>
+    <p>Welcome back! Please enter your details.</p>
+  </div>
+  <form class="inputs" [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()">
+    <div class="email">
+      <label>Email</label>
+      <input
+        formControlName="username"
+        type="username"
+        placeholder="Enter your email"
+      />
+    </div>
+    <div class="password">
+      <label>password</label>
+      <input type="password" formControlName="password" />
+    </div>
+
+    <button class="btn" type="submit">Sign in</button>
+  </form>
+</div>

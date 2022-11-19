@@ -1,0 +1,11 @@
+<div class="pagination">
+  <button>&laquo;</button>
+  <button
+    *ngFor="let num of [].constructor(pageNumber / 10); let i = index"
+    (click)="submit(i)"
+    [ngClass]="clickedIndex === i ? 'clicked' : ''"
+  >
+    {{ i + 1 }}
+  </button>
+  <button>&raquo;</button>
+</div>

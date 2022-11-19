@@ -1,0 +1,13 @@
+<div class="filter-wrapper">
+  <p class="choices">Products</p>
+  <div *ngFor="let cat of categories" class="choices">
+    <input
+      type="radio"
+      name="radio"
+      value=" {{ cat }}"
+      [checked]="value"
+      (change)="changevalue(cat)"
+    />
+    <label for="{{ cat }}"> {{ cat }}</label>
+  </div>
+</div>
